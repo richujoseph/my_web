@@ -1,253 +1,381 @@
+<!DOCTYPE html>
 <html lang="en">
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>
-   Richu Joseph's Portfolio Website
-  </title>
-  <script src="https://cdn.tailwindcss.com">
-  </script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
-  <style>
-   body {
-            font-family: 'Roboto', sans-serif;
-        }
-  </style>
- </head>
- <body class="bg-gray-900 text-white">
-  <!-- Header Section -->
-  <header class="bg-gray-800 p-4">
-   <nav class="container mx-auto flex justify-between items-center">
-    <a class="text-2xl font-bold" href="#">
-     CyberSec Portfolio
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Richu Joseph, portfolio, cybersecurity, ethical hacking, web security, bug bounty, personal portfolio" />
+    <meta name="description" content="Welcome to Richu Joseph's Portfolio. Cybersecurity Enthusiast and Student at St. Joseph's College of Engineering and Technology, Palai." />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/95a2002ecf.js" crossorigin="anonymous"></script>
+    <!-- Favicon -->
+    <link id='favicon' rel="shortcut icon" href="./assets/images/favicon.jpg" type="image/x-png">
+    <title>Portfolio | Richu Joseph</title>
+</head>
+<body>
+<header>
+        <a href="/" class="logo"><i class="fa-solid fa-shield-alt"></i> Richu Joseph</a>
+
+        <div id="menu" class="fas fa-bars"></div>
+        <nav class="navbar">
+            <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            </ul>
+        </nav>
+</header>
+<!-- navbar ends -->
+
+
+<!-- hero section starts -->
+<section class="home" id="home">
+    <div id="particles-js"></div>
+
+    <div class="content">
+    <h2>Hi There,<br/> I'm Richu Joseph <span></span></h2>
+    <p>I am into <span class="typing-text"></span></p>
+    <a href="#about" class="btn"><span>About Me</span>
+      <i class="fas fa-arrow-circle-down"></i>
     </a>
-    <ul class="flex space-x-4">
-     <li>
-      <a class="hover:text-green-400" href="#home">
-       Home
-      </a>
-     </li>
-     <li>
-      <a class="hover:text-green-400" href="#about">
-       About Me
-      </a>
-     </li>
-     <li>
-      <a class="hover:text-green-400" href="#projects">
-       Projects
-      </a>
-     </li>
-     <li>
-      <a class="hover:text-green-400" href="#blog">
-       Blog
-      </a>
-     </li>
-     <li>
-      <a class="hover:text-green-400" href="#contact">
-       Contact
-      </a>
-     </li>
-    </ul>
-   </nav>
-  </header>
-  <!-- Hero Section -->
-  <section class="relative h-screen flex items-center justify-center text-center" id="home">
-   <img src="https://wallpapercave.com/wp/wp2691568.jpg" alt="Description of the image">
-   <div class="relative z-10">
-    <h1 class="text-4xl md:text-6xl font-bold">
-     Securing the Digital World
-    </h1>
-    <p class="mt-4 text-xl md:text-2xl">
-     Cybersecurity Specialist
-    </p>
-    <a class="mt-8 inline-block bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600" href="#projects">
-     View My Work
-    </a>
-   </div>
-  </section>
-  <!-- About Me Section -->
-  <section class="py-16 bg-gray-800" id="about">
-   <div class="container mx-auto text-center">
-    <h2 class="text-3xl font-bold mb-8">
-     About Me
-    </h2>
-    <div class="flex flex-col md:flex-row items-center justify-center">
-     <img alt="Photo of cybersecurity specialist" class="rounded-full mb-8 md:mb-0 md:mr-8" src="https://placehold.co/200x200"/>
-     <div>
-      <p class="mb-4">
-       I am a cybersecurity ethusiast.Curently studying CSE(CY) at sjcet palai. 
-      </p>
-      <h3 class="text-2xl font-bold mb-4">
-       Skills &amp; Tools
-      </h3>
-      <ul class="flex flex-wrap justify-center space-x-4">
-       <li class="bg-gray-700 py-2 px-4 rounded">
-        Firewalls
-       </li>
-       <li class="bg-gray-700 py-2 px-4 rounded">
-        Penetration Testing
-       </li>
-       <li class="bg-gray-700 py-2 px-4 rounded">
-        Ethical Hacking
-       </li>
-       <li class="bg-gray-700 py-2 px-4 rounded">
-        Threat Intelligence
-       </li>
-      </ul>
-     </div>
+    <div class="socials">
+        <ul class="social-icons">
+          <li><a class="facebook" aria-label="Facebook" href="#" target="_blank"><i class="fab fa-facebook"></i></a></li>
+          <li><a class="instagram" aria-label="Instagram" href="#"><i class="fab fa-instagram" target="_blank"></i></a></li>
+          <li><a class="linkedin" aria-label="LinkedIn" href="#"><i class="fab fa-linkedin"></i></a></li> 
+          <li><a class="twitter" aria-label="Twitter" href="#"><i class="fab fa-twitter"></i></a></li> 
+          <li><a class="github" aria-label="GitHub" href="#"><i class="fab fa-github"></i></a></li>
+          <li><a class="dev" aria-label="YouTube" href="#"><i class="fab fa-youtube"></i></a></li>
+        </ul>
+      </div>
     </div>
-   </div>
-  </section>
-  <!-- Projects Section -->
-  <section class="py-16" id="projects">
-   <div class="container mx-auto text-center">
-    <h2 class="text-3xl font-bold mb-8">
-     Projects
-    </h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-     <div class="bg-gray-800 p-4 rounded">
-      <img alt="Screenshot of cybersecurity project 1" class="mb-4 rounded" src="https://placehold.co/400x300"/>
-      <h3 class="text-2xl font-bold mb-2">
-       Project 1
-      </h3>
-      <p class="mb-4">
-       Description of the first cybersecurity project.
-      </p>
-      <a class="text-green-400 hover:underline" href="#">
-       View Details
-      </a>
-     </div>
-     <div class="bg-gray-800 p-4 rounded">
-      <img alt="Screenshot of cybersecurity project 2" class="mb-4 rounded" src="https://placehold.co/400x300"/>
-      <h3 class="text-2xl font-bold mb-2">
-       Project 2
-      </h3>
-      <p class="mb-4">
-       Description of the second cybersecurity project.
-      </p>
-      <a class="text-green-400 hover:underline" href="#">
-       View Details
-      </a>
-     </div>
-     <div class="bg-gray-800 p-4 rounded">
-      <img alt="Screenshot of cybersecurity project 3" class="mb-4 rounded" src="https://placehold.co/400x300"/>
-      <h3 class="text-2xl font-bold mb-2">
-       Project 3
-      </h3>
-      <p class="mb-4">
-       Description of the third cybersecurity project.
-      </p>
-      <a class="text-green-400 hover:underline" href="#">
-       View Details
-      </a>
-     </div>
+<div class="image">
+    <img draggable="false" class="tilt" src="./assets/images/personal.jpg" alt="" height="">
+</div>
+</section>
+<!-- hero section ends -->
+
+
+<!-- about section starts -->
+<section class="about" id="about">
+    <h2 class="heading"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
+    
+    <div class="row">
+
+    <div class="image">
+        <img draggable="false" class="tilt" src="./assets/images/profile1.png" alt="">
     </div>
-   </div>
-  </section>
-  <!-- Blog Section -->
-  <section class="py-16 bg-gray-800" id="blog">
-   <div class="container mx-auto text-center">
-    <h2 class="text-3xl font-bold mb-8">
-     Blog
-    </h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-     <div class="bg-gray-700 p-4 rounded">
-      <h3 class="text-2xl font-bold mb-2">
-       Blog Post 1
-      </h3>
-      <p class="text-sm text-gray-400 mb-4">
-       January 1, 2023
-      </p>
-      <p class="mb-4">
-       Brief description of the first blog post related to cybersecurity.
-      </p>
-      <a class="text-green-400 hover:underline" href="#">
-       Read More
-      </a>
-     </div>
-     <div class="bg-gray-700 p-4 rounded">
-      <h3 class="text-2xl font-bold mb-2">
-       Blog Post 2
-      </h3>
-      <p class="text-sm text-gray-400 mb-4">
-       February 1, 2023
-      </p>
-      <p class="mb-4">
-       Brief description of the second blog post related to cybersecurity.
-      </p>
-      <a class="text-green-400 hover:underline" href="#">
-       Read More
-      </a>
-     </div>
-     <div class="bg-gray-700 p-4 rounded">
-      <h3 class="text-2xl font-bold mb-2">
-       Blog Post 3
-      </h3>
-      <p class="text-sm text-gray-400 mb-4">
-       March 1, 2023
-      </p>
-      <p class="mb-4">
-       Brief description of the third blog post related to cybersecurity.
-      </p>
-      <a class="text-green-400 hover:underline" href="#">
-       Read More
-      </a>
-     </div>
+    <div class="content">
+        <h3>I'm Richu Joseph</h3>
+        <span class="tag">Cybersecurity Enthusiast</span>
+        
+        <p>I am a Cybersecurity Enthusiast currently studying at St. Joseph's College of Engineering and Technology, Palai. 
+          I am passionate about ethical hacking, web security, and bug bounty programs. 
+          My first Python-based micro project is a WiFi probe request sniffer, and I also conduct DoS attacks by hosting a self-server and creating random IP generators.</p>
+        
+        <div class="box-container">
+            <div class="box">
+              <p><span> Age: </span> 22</p>
+              <p><span> Phone: </span> +91 XXX-XXX-XXXX</p>
+            </div>
+            <div class="box">
+              <p><span> Email: </span> richujoseph@example.com</p>
+              <p><span> Place: </span> Kerala, India</p>
+            </div>
+        </div>
+        
+        <div class="resumebtn">
+            <a href="#" target="_blank" class="btn"><span>Resume</span>
+                <i class="fas fa-chevron-right"></i>
+            </a>
+        </div>
+
     </div>
-   </div>
-  </section>
-  <!-- Contact Section -->
-  <section class="py-16" id="contact">
-   <div class="container mx-auto text-center">
-    <h2 class="text-3xl font-bold mb-8">
-     Contact
-    </h2>
-    <form class="max-w-lg mx-auto">
-     <div class="mb-4">
-      <input class="w-full p-2 rounded bg-gray-800 text-white" placeholder="Name" type="text"/>
-     </div>
-     <div class="mb-4">
-      <input class="w-full p-2 rounded bg-gray-800 text-white" placeholder="Email" type="email"/>
-     </div>
-     <div class="mb-4">
-      <textarea class="w-full p-2 rounded bg-gray-800 text-white" placeholder="Message"></textarea>
-     </div>
-     <button class="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600" type="submit">
-      Send Message
-     </button>
-    </form>
-    <div class="mt-8">
-     <a class="text-gray-400 hover:text-white mx-2" href="#">
-      <i class="fab fa-linkedin">
-      </i>
-     </a>
-     <a class="text-gray-400 hover:text-white mx-2" href="#">
-      <i class="fab fa-twitter">
-      </i>
-     </a>
-     <a class="text-gray-400 hover:text-white mx-2" href="#">
-      <i class="fab fa-github">
-      </i>
-     </a>
     </div>
-   </div>
-  </section>
-  <!-- Footer Section -->
-  <footer class="bg-gray-800 py-4">
-   <div class="container mx-auto text-center">
-    <p class="text-gray-400">
-     © 2023 CyberSec Portfolio. All rights reserved.
-    </p>
-    <div class="mt-2">
-     <a class="text-gray-400 hover:text-white mx-2" href="#">
-      Privacy Policy
-     </a>
-     <a class="text-gray-400 hover:text-white mx-2" href="#">
-      Terms of Service
-     </a>
+</section>
+<!-- about section ends -->
+
+<!-- skills section starts -->
+<section class="skills" id="skills">
+
+    <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span></h2>
+
+    <div class="container">
+          <div class="row" id="skillsContainer">
+
+            <div class="bar">
+              <div class="info">
+                <img src="./assets/images/skills/python.png" height="50" width="50">
+                <span>Python</span>
+              </div>
+            </div>
+            <div class="bar">
+              <div class="info">
+                <img src="./assets/images/skills/ethical-hacking.png" height="50" width="50">
+                <span>Ethical Hacking</span>
+              </div>
+            </div>
+            <div class="bar">
+              <div class="info">
+                <img src="./assets/images/skills/web-security.png" height="50" width="50">
+                <span>Web Security</span>
+              </div>
+            </div>
+            <div class="bar">
+              <div class="info">
+                <img src="./assets/images/skills/bug-bounty.png" height="50" width="50">
+                <span>Bug Bounty</span>
+              </div>
+            </div>
+            <div class="bar">
+              <div class="info">
+                <img src="./assets/images/skills/network-security.png" height="50" width="50">
+                <span>Network Security</span>
+              </div>
+            </div>
+            <div class="bar">
+              <div class="info">
+                <img src="./assets/images/skills/linux.png" height="50" width="50">
+                <span>Linux</span>
+              </div>
+            </div>
+            <div class="bar">
+              <div class="info">
+                <img src="./assets/images/skills/sql.png" height="50" width="50">
+                <span>SQL</span>
+              </div>
+            </div>
+            <div class="bar">
+              <div class="info">
+                <img src="./assets/images/skills/javascript.png" height="50" width="50">
+                <span>JavaScript</span>
+              </div>
+            </div>
+            <div class="bar">
+              <div class="info">
+                <img src="./assets/images/skills/html.png" height="50" width="50">
+                <span>HTML</span>
+              </div>
+            </div>
+            <div class="bar">
+              <div class="info">
+                <img src="./assets/images/skills/css.png" height="50" width="50">
+                <span>CSS</span>
+              </div>
+            </div>
+          </div>
     </div>
-   </div>
-  </footer>
- </body>
+</section>
+<!-- skills section ends -->
+
+
+<!-- education section starts -->
+<section class="education" id="education">
+
+  <h1 class="heading"><i class="fas fa-graduation-cap"></i> My <span>Education</span></h1>
+
+    <p class="quote">Education is not the learning of facts, but the training of the mind to think.</p>
+
+    <div class="box-container">
+
+    <div class="box">
+        <div class="image">
+        <img draggable="false" src="./assets/images/educat/st-josephs.jpg" alt="">
+        </div>
+        <div class="content">
+        <h3>B.Tech in Computer Science with cybersecurity</h3>
+        <p>St. Joseph's College of Engineering and Technology, Palai</p>
+        <h4>2023-Present | Ongoing</h4>
+        </div>
+    </div>
+
+    <div class="box">
+      <div class="image">
+      <img draggable="false" src="./assets/images/educat/highschool.jpg" alt="">
+      </div>
+      <div class="content">
+      <h3>High School</h3>
+      <p>XYZ High School, Kerala</p>
+      <h4>2016-2018 | Completed</h4>
+      </div>
+    </div>
+
+</div>
+</section>
+<!-- education section ends -->
+
+
+<!-- projects section starts -->
+<section class="projects" id="projects">
+
+  <h2 class="heading"><i class="fas fa-laptop-code"></i> Projects <span>Completed</span></h2>
+
+  <div class="box-container">
+
+    <div class="box tilt">
+      <img draggable="false" src="./assets/images/projects/wifi-sniffer.png" alt="" />
+      <div class="content">
+        <div class="tag">
+        <h3>WiFi Probe Request Sniffer</h3>
+        </div>
+        <div class="desc">
+          <p>A Python-based micro project that captures WiFi probe requests.</p>
+          <div class="btns">
+            <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
+            <a href="#" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="box tilt">
+      <img draggable="false" src="./assets/images/projects/dos-attack.png" alt="" />
+      <div class="content">
+        <div class="tag">
+        <h3>DoS Attack Simulation</h3>
+        </div>
+        <div class="desc">
+          <p>Conducted DoS attacks by hosting a self-server.</p>
+          <div class="btns">
+            <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
+            <a href="#" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="box tilt">
+      <img draggable="false" src="./assets/images/projects/ip-generator.png" alt="" />
+      <div class="content">
+        <div class="tag">
+        <h3>Random IP Generator</h3>
+        </div>
+        <div class="desc">
+          <p>A tool to generate random IP addresses for testing purposes.</p>
+          <div class="btns">
+            <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
+            <a href="#" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</div>
+
+</section>
+<!-- projects section ends -->
+
+<!-- experience section starts -->
+<section class="experience" id="experience">
+
+  <h2 class="heading"><i class="fas fa-briefcase"></i> Work Timeline </h2>
+
+  <div class="timeline">
+
+    <div class="container left">
+      <div class="content">
+        <div class="tag">
+          <h2>Cybersecurity Intern</h2>
+        </div>
+        <div class="desc">
+            <p>Internship focused on ethical hacking and web security assessments.</p>
+        </div>
+      </div>
+    </div>
+    <div class="container right">
+      <div class="content">
+        <div class="tag">
+          <h2>Freelance Security Consultant</h2>
+        </div>
+        <div class="desc">
+            <p>Provided security assessments and recommendations for small businesses.</p>
+        </div>
+      </div>
+    </div>
+
+</div>
+
+</section>
+<!-- experience section ends -->
+
+<!-- footer section starts -->
+<section class="footer">
+
+  <div class="box-container">
+
+      <div class="box">
+          <h3>Richu's Portfolio</h3>
+          <p>Thank you for visiting my personal portfolio website. Connect with me over socials. <br/> <br/> Keep Learning 🚀. Let's connect!</p>
+      </div>
+
+      <div class="box">
+          <h3>Quick Links</h3>
+          <a href="#home"><i class="fas fa-chevron-circle-right"></i> Home</a>
+          <a href="#about"><i class="fas fa-chevron-circle-right"></i> About</a>
+          <a href="#skills"><i class="fas fa-chevron-circle-right"></i> Skills</a>
+          <a href="#education"><i class="fas fa-chevron-circle-right"></i> Education</a>
+          <a href="#projects"><i class="fas fa-chevron-circle-right"></i> Projects</a>
+          <a href="#experience"><i class="fas fa-chevron-circle-right"></i> Experience</a>
+      </div>
+
+      <div class="box">
+          <h3>Contact Info</h3>
+          <p> <i class="fas fa-phone"></i>+91 XXX-XXX-XXXX</p>
+          <p> <i class="fas fa-envelope"></i>richujoseph@example.com</p>
+          <p> <i class="fas fa-map-marked-alt"></i>Kerala, India</p>
+          <div class="share">
+            <a class="facebook" aria-label="Facebook" href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a class="instagram" aria-label="Instagram" href="#"><i class="fab fa-instagram" target="_blank"></i></a>
+            <a class="linkedin" aria-label="LinkedIn" href="#"><i class="fab fa-linkedin"></i></a> 
+            <a class="twitter" aria-label="Twitter" href="#"><i class="fab fa-twitter"></i></a>
+            <a class="github" aria-label="GitHub" href="#"><i class="fab fa-github"></i></a>
+            <a class="dev" aria-label="YouTube" href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+      </div>
+  </div>
+
+  <h1 class="credit">Designed & Developed <i class="fa fa-heart pulse"></i> by <a href="#">Richu Joseph</a></h1>
+
+</section>
+<!-- footer section ends -->
+
+
+<!-- scroll top btn -->
+<a href="#home" aria-label="ScrollTop" class="fas fa-angle-up" id="scroll-top"></a>
+<!-- scroll back to top -->
+
+
+<!-- ==== ALL MAJOR JAVASCRIPT CDNS STARTS ==== -->
+<!-- jquery cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- typed.js cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js" integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- particle.js links -->
+<script src="./assets/js/particles.min.js"></script>
+<script src="./assets/js/app.js"></script>
+
+<!-- vanilla tilt.js links -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js" integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- scroll reveal anim -->
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+    ></script>
+
+<!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
+
+<script src="./assets/js/script.js"></script>
+
+</body>
 </html>
