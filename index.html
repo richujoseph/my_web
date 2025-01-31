@@ -6,13 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Richu Joseph, portfolio, cybersecurity, ethical hacking, web security, bug bounty, personal portfolio" />
     <meta name="description" content="Welcome to Richu Joseph's Portfolio. Cybersecurity Enthusiast and Student at St. Joseph's College of Engineering and Technology, Palai." />
+    
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- AOS (Animate On Scroll) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" />
+    
+    <!-- Favicon -->
     <link id='favicon' rel="shortcut icon" href="./assets/images/favicon.jpg" type="image/x-png">
+    
     <title>Portfolio | Richu Joseph</title>
+    
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -215,9 +223,9 @@
         </ul>
       </div>
     </div>
-<div class="image">
-    <img draggable="false" class="tilt" src="./assets/images/personal.jpg" alt="Richu Joseph" height="">
-</div>
+    <div class="image">
+        <img draggable="false" class="tilt" src="./assets/images/personal.jpg" alt="Richu Joseph" height="">
+    </div>
 </section>
 <!-- hero section ends -->
 
@@ -228,35 +236,35 @@
     
     <div class="row" data-aos="fade-up">
 
-    <div class="image">
-        <img draggable="false" class="tilt" src="./assets/images/profile1.png" alt="Richu Joseph's Photo">
-    </div>
-    <div class="content">
-        <h3>I'm Richu Joseph</h3>
-        <span class="tag">Cybersecurity Enthusiast</span>
-        
-        <p>I am a Cybersecurity Enthusiast currently studying at St. Joseph's College of Engineering and Technology, Palai. 
-          I am passionate about ethical hacking, web security, and bug bounty programs. 
-          My first Python-based micro project is a WiFi probe request sniffer, and I also conduct DoS attacks by hosting a self-server and creating random IP generators.</p>
-        
-        <div class="box-container">
-            <div class="box">
-              <p><span> Age: </span> 22</p>
-              <p><span> Phone: </span> +91 XXX-XXX-XXXX</p>
-            </div>
-            <div class="box">
-              <p><span> Email: </span> richujoseph@example.com</p>
-              <p><span> Place: </span> Kerala, India</p>
-            </div>
+        <div class="image">
+            <img draggable="false" class="tilt" src="./assets/images/profile1.png" alt="Richu Joseph's Photo">
         </div>
-        
-        <div class="resumebtn">
-            <a href="#" target="_blank" class="btn"><span>Resume</span>
-                <i class="fas fa-chevron-right"></i>
-            </a>
-        </div>
+        <div class="content">
+            <h3>I'm Richu Joseph</h3>
+            <span class="tag">Cybersecurity Enthusiast</span>
+            
+            <p>I am a Cybersecurity Enthusiast currently studying at St. Joseph's College of Engineering and Technology, Palai. 
+              I am passionate about ethical hacking, web security, and bug bounty programs. 
+              My first Python-based micro project is a WiFi probe request sniffer, and I also conduct DoS attacks by hosting a self-server and creating random IP generators.</p>
+            
+            <div class="box-container">
+                <div class="box">
+                  <p><span> Age: </span> 22</p>
+                  <p><span> Phone: </span> +91 XXX-XXX-XXXX</p>
+                </div>
+                <div class="box">
+                  <p><span> Email: </span> richujoseph@example.com</p>
+                  <p><span> Place: </span> Kerala, India</p>
+                </div>
+            </div>
+            
+            <div class="resumebtn">
+                <a href="#" target="_blank" class="btn"><span>Resume</span>
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+            </div>
 
-    </div>
+        </div>
     </div>
 </section>
 <!-- about section ends -->
@@ -488,6 +496,22 @@
 <script>
     // Initialize AOS
     AOS.init();
+
+    // Show or hide the scroll-to-top button
+    window.onscroll = function() {
+        const scrollTopButton = document.getElementById("scroll-top");
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            scrollTopButton.style.display = "block";
+        } else {
+            scrollTopButton.style.display = "none";
+        }
+    };
+
+    // Scroll to top functionality
+    document.getElementById("scroll-top").onclick = function() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+    };
 </script>
 
 </body>
