@@ -14,6 +14,291 @@
     <!-- Favicon -->
     <link id='favicon' rel="shortcut icon" href="./assets/images/favicon.jpg" type="image/x-png">
     <title>Portfolio | Richu Joseph</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        header .logo {
+            font-size: 24px;
+            margin-left: 20px;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        nav {
+            float: right;
+            margin-right: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #f4f4f4;
+        }
+
+        .home {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: url('./assets/images/background.jpg') no-repeat center center/cover;
+            position: relative;
+            color: #fff;
+            text-align: center;
+        }
+
+        .home .content {
+            z-index: 2;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .home .content h2 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .home .content p {
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+
+        .home .btn {
+            background: #ff5722;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .home .btn:hover {
+            background: #e64a19;
+        }
+
+        .socials {
+            margin-top: 20px;
+        }
+
+        .socials a {
+            color: #fff;
+            margin: 0 10px;
+            font-size: 24px;
+            transition: color 0.3s;
+        }
+
+        .socials a:hover {
+            color: #ff5722;
+        }
+
+        /* About Section */
+        .about {
+            padding: 60px 20px;
+            background: #fff;
+            text-align: center;
+        }
+
+        .about h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .about .row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .about .image {
+            flex: 1;
+            max-width: 300px;
+            margin-right: 20px;
+        }
+
+        .about .content {
+            flex: 2;
+            text-align: left;
+        }
+
+        .about .content h3 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .about .content p {
+            margin-bottom: 20px;
+        }
+
+        /* Skills Section */
+        .skills {
+            padding: 60px 20px;
+            background: #f4f4f4;
+            text-align: center;
+        }
+
+        .skills h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .skills .bar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px 0;
+            transition: transform 0.3s;
+        }
+
+        .skills .bar:hover {
+            transform: scale(1.05);
+        }
+
+        .skills .info {
+            display: flex;
+            align-items: center;
+            margin: 0 10px;
+        }
+
+        .skills img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        /* Projects Section */
+        .projects {
+            padding: 60px 20px;
+            background: #fff;
+            text-align: center;
+        }
+
+        .projects h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .projects .box-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .projects .box {
+            background: #f4f4f4;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 20px;
+            width: 300px;
+            transition: transform 0.3s;
+        }
+
+        .projects .box:hover {
+            transform: scale(1.05);
+        }
+
+        .projects .box img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        /* Footer Section */
+        .footer {
+            padding: 20px;
+            background: #333;
+            color: #fff;
+            text-align: center;
+        }
+
+        .footer .box-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .footer .box {
+            margin: 20px;
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .footer .box h3 {
+            margin-bottom: 10px;
+        }
+
+        .footer .share a {
+            margin: 0 10px;
+            color: #fff;
+            font-size: 20px;
+            transition: color 0.3s;
+        }
+
+        .footer .share a:hover {
+            color: #ff5722;
+        }
+
+        /* Animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Scroll to Top Button */
+        #scroll-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #ff5722;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            padding: 10px;
+            cursor: pointer;
+            display: none;
+            transition: background 0.3s;
+        }
+
+        #scroll-top:hover {
+            background: #e64a19;
+        }
+    </style>
 </head>
 <body>
 <header>
@@ -47,8 +332,8 @@
     <div class="socials">
         <ul class="social-icons">
           <li><a class="facebook" aria-label="Facebook" href="#" target="_blank"><i class="fab fa-facebook"></i></a></li>
-          <li><a class="instagram" aria-label="Instagram" href="#"><i class="fab fa-instagram" target="_blank"></i></a></li>
-          <li><a class="linkedin" aria-label="LinkedIn" href="#"><i class="fab fa-linkedin"></i></a></li> 
+          <li><a class="instagram" aria-label="Instagram" href="https://www.instagram.com/your_instagram_username/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+          <li><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/your_linkedin_username/" target="_blank"><i class="fab fa-linkedin"></i></a></li> 
           <li><a class="twitter" aria-label="Twitter" href="#"><i class="fab fa-twitter"></i></a></li> 
           <li><a class="github" aria-label="GitHub" href="#"><i class="fab fa-github"></i></a></li>
           <li><a class="dev" aria-label="YouTube" href="#"><i class="fab fa-youtube"></i></a></li>
@@ -175,42 +460,6 @@
 <!-- skills section ends -->
 
 
-<!-- education section starts -->
-<section class="education" id="education">
-
-  <h1 class="heading"><i class="fas fa-graduation-cap"></i> My <span>Education</span></h1>
-
-    <p class="quote">Education is not the learning of facts, but the training of the mind to think.</p>
-
-    <div class="box-container">
-
-    <div class="box">
-        <div class="image">
-        <img draggable="false" src="./assets/images/educat/st-josephs.jpg" alt="">
-        </div>
-        <div class="content">
-        <h3>B.Tech in Computer Science with cybersecurity</h3>
-        <p>St. Joseph's College of Engineering and Technology, Palai</p>
-        <h4>2023-Present | Ongoing</h4>
-        </div>
-    </div>
-
-    <div class="box">
-      <div class="image">
-      <img draggable="false" src="./assets/images/educat/highschool.jpg" alt="">
-      </div>
-      <div class="content">
-      <h3>High School</h3>
-      <p>XYZ High School, Kerala</p>
-      <h4>2016-2018 | Completed</h4>
-      </div>
-    </div>
-
-</div>
-</section>
-<!-- education section ends -->
-
-
 <!-- projects section starts -->
 <section class="projects" id="projects">
 
@@ -331,8 +580,8 @@
           <p> <i class="fas fa-map-marked-alt"></i>Kerala, India</p>
           <div class="share">
             <a class="facebook" aria-label="Facebook" href="#" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a class="instagram" aria-label="Instagram" href="#"><i class="fab fa-instagram" target="_blank"></i></a>
-            <a class="linkedin" aria-label="LinkedIn" href="#"><i class="fab fa-linkedin"></i></a> 
+            <a class="instagram" aria-label="Instagram" href="https://www.instagram.com/your_instagram_username/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/your_linkedin_username/" target="_blank"><i class="fab fa-linkedin"></i></a> 
             <a class="twitter" aria-label="Twitter" href="#"><i class="fab fa-twitter"></i></a>
             <a class="github" aria-label="GitHub" href="#"><i class="fab fa-github"></i></a>
             <a class="dev" aria-label="YouTube" href="#"><i class="fab fa-youtube"></i></a>
